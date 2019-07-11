@@ -2,6 +2,7 @@ baseURL = "https://kross.netlify.com"
 languageCode = "en-us"
 title = "Native Speaker Review | Hugo Portfolio Template"
 summaryLength = "10"
+publishDir = "docs"
 
 # Plugins
 [params.plugins]
