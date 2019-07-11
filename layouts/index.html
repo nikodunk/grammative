@@ -4,15 +4,35 @@
   <section class="hero-area bg-primary" id="parallax">
     <div class="container">
       <div class="row">
-        <div class="col-lg-11 mx-auto">
+        <div class="col-lg-6 mx-auto">
           <h1 class="text-white font-tertiary">{{ .Site.Data.homepage.banner.title | safeHTML }}</h1>
+        </div>
+
+        <div class="col-lg-6 mx-auto">
+            <div class="bg-white rounded text-center p-5 shadow-down">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="sghante@gmail.com">
+                <input type="hidden" name="lc" value="AR">
+                <input type="hidden" name="button_subtype" value="services">
+                <input type="hidden" name="no_note" value="0">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                <table>
+                <tr><td><input class="form-control px-0 mb-4" type="hidden" name="on0" value="Web URL to review">Web URL to review</td></tr><tr><td><input class="form-control px-0 mb-4" type="text" name="os0" maxlength="200"></td></tr>
+                <tr><td><input class="form-control px-0 mb-4" type="hidden" name="on1" value="Your Email Address">Your Email Address</td></tr><tr><td><input class="form-control px-0 mb-4" type="text" name="os1" maxlength="200"></td></tr>
+                </table>
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+            </div>
         </div>
       </div>
     </div>
-    <div class="layer-bg w-100">
+    <!-- <div class="layer-bg w-100" id="l2">
       <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l2">
+    </div> -->
+    <div class="layer-bg" id="l2">
       <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
     </div>
     <div class="layer" id="l3">
@@ -46,6 +66,31 @@
   </section>
   <!-- /hero area -->
 
+  {{ if .Site.Data.homepage.service.enable }}
+  <!-- services -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">Services</h2>
+        </div>
+        {{ range .Site.Data.homepage.service.item }}
+        <div class="col-md-4 mb-4">
+          <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
+            <div class="card-body text-center px-4 py-5">
+              <i class="{{.icon }} icon mb-5 d-inline-block"></i>
+              <h4 class="mb-4">{{.title}}</h4>
+              <p>{{.content | markdownify}}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- /services -->
+  {{ end }}
+  
   {{ if .Site.Data.homepage.about.enable }}
   <!-- about -->
   <section class="section">
@@ -145,30 +190,6 @@
   {{ end }}
 
 
-  {{ if .Site.Data.homepage.service.enable }}
-  <!-- services -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">Services</h2>
-        </div>
-        {{ range .Site.Data.homepage.service.item }}
-        <div class="col-md-4 mb-4">
-          <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
-            <div class="card-body text-center px-4 py-5">
-              <i class="{{.icon }} icon mb-5 d-inline-block"></i>
-              <h4 class="mb-4">{{.title}}</h4>
-              <p>{{.content | markdownify}}</p>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  <!-- /services -->
-  {{ end }}
 
 
   {{ if .Site.Data.homepage.portfolio.enable }}
