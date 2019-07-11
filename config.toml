@@ -1,4 +1,4 @@
-baseURL = "https://kross.netlify.com"
+baseURL = "https://nikodunk.github.io/nativespeakerreview"
 languageCode = "en-us"
 title = "Native Speaker Review | Hugo Portfolio Template"
 summaryLength = "10"
