@@ -1,14 +1,30 @@
 {{ define "main" }}
 
+  <styles>
+    .typed-cursor {
+      color: salmon !important;
+    }
+  </styles>
+
   <!-- hero area -->
   <section class="hero-area bg-primary" id="parallax">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 mx-auto">
-          <h1 class="text-white font-tertiary">{{ .Site.Data.homepage.banner.title | safeHTML }}</h1>
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white font-tertiary">{{ .Site.Data.homepage.banner.title | safeHTML }}<br/> <span style="color: salmon" id="typed"></span></h2>
+          <div id="typed-strings">
+            <span >Website</span>
+            <span >Investor Deck</span>
+            <span >Press Release</span>
+            <span >Product Page</span>
+            <span >FAQ</span>
+            <span >Social Media Posts</span>
+            <span >Emails</span>
+          </div>
+          
         </div>
 
-        <div class="col-lg-6 mx-auto">
+        <div class="col-lg-4 mx-auto">
             <div class="bg-white rounded text-center p-5 shadow-down">
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_xclick">
@@ -296,4 +312,16 @@
   {{ end }}
 
 
+
+    <script>
+      var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 80,
+        loop: true,
+        loopCount: Infinity,
+        backDelay: 700
+      });
+    </script>
+
+    
 {{ end }}

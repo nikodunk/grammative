@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contact on Native Speaker Review | Hugo Portfolio Template</title>
-    <link>https://nikodunk.github.io/nativespeakerreview/contact/</link>
+    <link>/contact/</link>
     <description>Recent content in Contact on Native Speaker Review | Hugo Portfolio Template</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
     
-	<atom:link href="https://nikodunk.github.io/nativespeakerreview/contact/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/contact/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
