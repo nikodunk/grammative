@@ -58,3 +58,8 @@ input, textarea {
     padding-top: 0px !important;
   }
 }
+
+.flag {
+  margin: 10px !important;
+  min-width: 50px !important;
+}
