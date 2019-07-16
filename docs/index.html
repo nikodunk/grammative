@@ -9,7 +9,10 @@
 	<link href="assets/styles.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Noto+Serif:400,400i,700,700i&amp;subset=arabic,bengali,cyrillic,cyrillic-ext,devanagari,greek,greek-ext,gujarati,hebrew,khmer,korean,latin-ext,tamil,telugu,thai,vietnamese">
 </head>
+
 <body class="brz">
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
 	<div class="brz-root__container brz-reset-all">
 	   <section id="pbwegdvxvpxajgdvjhgtyxyosjllmtvrrxrk" class="brz-section css-7d6yzg" data-uid="pbwegdvxvpxajgdvjhgtyxyosjllmtvrrxrk">
 		   <div class="brz-section__items">
@@ -42,7 +45,12 @@
 															   <div class="brz-wrapper css-6fvry1">
 																   <div class="brz-d-xs-flex css-hlpppn">
 																	   <div class="" data-custom-id="wfzywijjoptdjreseiwzepghtzlrkygigujj">
-																		   <p class="brz-text-xs-center brz-text-lg-left brz-lh-xs-1_3 brz-fs-xs-34 brz-tp-heading1"><strong class="brz-cp-color2">Native English Speaker Review for</strong></p>
+																		   <p class="brz-text-xs-center brz-text-lg-left brz-lh-xs-1_3 brz-fs-xs-34 brz-tp-heading1"><strong class="brz-cp-color2">Native English Speaker Review for</strong><br/>
+																			<span id="typed"></span></p>
+																			<div id="typed-strings">
+																				<span >websites</span>
+																				<span >powerpoints</span>
+																			</div>
 																	   </div>
 																   </div>
 															   </div>
@@ -72,12 +80,10 @@
 														</div>
 														<div class="brz-bg-content">
 														   <div class="brz-wrapper css-6fvry1">
-
 																   <div class="" data-custom-id="pxcdgotljjicpmixyqdiznumppemmfifwaoc">
 																	   <p class="brz-mt-lg-10 brz-text-lg-center brz-mb-lg-10 brz-tp-heading4"><span class="brz-cp-color2">Send us your URL to review!</span></p>
 																   </div>
-
-														   </div>
+														   </div> 
 														   <div class="brz-wrapper css-6fvry1">
 															   <div class="brz-d-xs-flex css-laz546">
 																   <div class="brz-form css-1ihlh31" data-custom-id="xjqbugknghmnbstyvtagtnrtlwfefpzthtkc">
@@ -2082,5 +2088,18 @@
 </div>
 </section>
 </div>
+
+  <!-- for typing effect -->
+  <script>
+		var typed = new Typed('#typed', {
+		  stringsElement: '#typed-strings',
+		  typeSpeed: 80,
+		  loop: true,
+		  loopCount: Infinity,
+		  backDelay: 700
+		});
+	  </script>
+
+	  
 </body>
 </html>
