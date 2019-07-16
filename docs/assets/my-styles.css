@@ -10,7 +10,7 @@ input, textarea {
 .bg-image{
   background-image: url('img/masthead.jpg'); 
   background-position: center bottom; 
-  background-size: contain; 
+  background-size: cover; 
   background-repeat: no-repeat
 }
 
