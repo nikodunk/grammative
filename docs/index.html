@@ -21,6 +21,35 @@
 	<link async href="assets/default.css" rel="stylesheet">
 	<link async href="assets/my-styles.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Noto+Serif:400,400i,700,700i&amp;subset=arabic,bengali,cyrillic,cyrillic-ext,devanagari,greek,greek-ext,gujarati,hebrew,khmer,korean,latin-ext,tamil,telugu,thai,vietnamese">
+	
+	<!-- Start of Async Drift Code -->
+	<script>
+		"use strict";
+		
+		!function() {
+		  var t = window.driftt = window.drift = window.driftt || [];
+		  if (!t.init) {
+		    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+		    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+		    t.factory = function(e) {
+		      return function() {
+		        var n = Array.prototype.slice.call(arguments);
+		        return n.unshift(e), t.push(n), t;
+		      };
+		    }, t.methods.forEach(function(e) {
+		      t[e] = t.factory(e);
+		    }), t.load = function(t) {
+		      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+		      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+		      var i = document.getElementsByTagName("script")[0];
+		      i.parentNode.insertBefore(o, i);
+		    };
+		  }
+		}();
+		drift.SNIPPET_VERSION = '0.3.1';
+		drift.load('k9hgce36mtf7');
+		</script>
+		<!-- End of Async Drift Code -->
 </head>
 
 <body class="brz">
@@ -67,7 +96,7 @@
 																	<form action="https://formspree.io/sghante@gmail.com" method="POST">
 																		<input required class="call-to-action" name="url" placeholder="URL" type="url">
 																		<input required type="email" class="call-to-action" name="_replyto" placeholder="Email Address" type="email">
-																		<input class="call-to-action btn" value="GET IN TOUCH" type="submit">
+																		<button class="call-to-action btn" value="GET IN TOUCH" type="submit" />
 																	</form>
 																</div>
 														   </div>
