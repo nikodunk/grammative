@@ -9,13 +9,12 @@ input, textarea {
 .call-to-action{
   margin: 2px;
   padding: 20px;
-  border: 1px solid lightgrey;
+  border: 1px solid #6c63ff;
 }
 
 .btn{
   background-color: #6c63ff;
   color: white;
-  border: none !important;
   border-radius: 10px !important;
   text-decoration: none;
   font-family: sans-serif ;
@@ -82,4 +81,16 @@ input, textarea {
 .flag {
   margin: 10px !important;
   min-width: 50px !important;
+}
+
+.image{
+  max-width: 100%;
+  margin: auto !important;
+}
+
+
+.icon{
+  height: 30px; 
+  margin: 5px;
+  margin-top: 15px;
 }
