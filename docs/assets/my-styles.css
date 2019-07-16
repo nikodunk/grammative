@@ -6,16 +6,11 @@ input, textarea {
   background-color: #dbd9ff !important
 }
 
-.bg-image{
-  background-image: url('img/masthead.png'); 
-  background-position: center right; 
-  background-size: contain; 
-  background-repeat: no-repeat;
-  opacity: 10%;
-}
+
 
 
 .call-to-action{
+  margin: 2px;
   padding: 20px;
   border: 1px solid lightgrey;
 }
@@ -28,4 +23,41 @@ input, textarea {
   text-decoration: none;
   font-family: sans-serif ;
   cursor: pointer
+}
+
+
+
+/* MOBILE */
+@media(max-width: 768px){
+  .bg-image{
+    background-image: url('img/masthead.png'); 
+    background-position: center right; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    font-size: 2rem !important;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+  }
+
+}
+
+
+
+/* DESKTOP */
+@media(min-width: 768px){
+  .bg-image{
+    background-image: url('img/masthead.png'); 
+    background-position: center right; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    font-size: 3rem !important;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+  }
 }
