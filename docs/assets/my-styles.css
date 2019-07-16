@@ -3,7 +3,7 @@ input, textarea {
 }
 
 .bg-blue {
-  background-color:  #e6f5ff !important
+  background-color: #dbd9ff !important
 }
 
 .bg-image{
@@ -21,7 +21,11 @@ input, textarea {
 }
 
 .btn{
-  background-color: dodgerblue;
+  background-color: #6c63ff;
   color: white;
   border: none !important;
+  border-radius: 10px !important;
+  text-decoration: none;
+  font-family: sans-serif ;
+  cursor: pointer
 }

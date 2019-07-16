@@ -2624,14 +2624,14 @@ body.modal-open .mm-slideout {
   .brz .brz-strong {
     font-weight: 700; }
   .brz .brz-a {
-    color: #3dbfe8;
+    color: #6c63ff;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
     -webkit-box-shadow: none;
             box-shadow: none; }
     .brz .brz-a[href]:hover {
-      color: #1aabd8;
+      color: #6c63ff;
       -webkit-box-shadow: none;
               box-shadow: none;
       cursor: pointer; }
@@ -25166,7 +25166,7 @@ body.modal-open .mm-slideout {
 		}
 
 		.brz .brz-cp-color3 {
-			color: #239ddb;
+			color: #6c63ff;
 		}
 
 		.brz .brz-cp-color4 {
