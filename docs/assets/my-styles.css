@@ -2,22 +2,26 @@ input, textarea {
   border-radius: 10px !important
 }
 
-
 .bg-blue {
   background-color:  #e6f5ff !important
 }
 
 .bg-image{
-  background-image: url('img/masthead.jpg'); 
-  background-position: center bottom; 
-  background-size: cover; 
-  background-repeat: no-repeat
+  background-image: url('img/masthead.png'); 
+  background-position: center right; 
+  background-size: contain; 
+  background-repeat: no-repeat;
+  opacity: 10%;
 }
 
-.title-box{
-  border-radius: 10px;
-  background-color: white;
-  padding: 40px;
-  height: 50% !important;
+
+.call-to-action{
+  padding: 20px;
+  border: 1px solid lightgrey;
 }
 
+.btn{
+  background-color: dodgerblue;
+  color: white;
+  border: none !important;
+}
