@@ -80,3 +80,11 @@ input, textarea {
   margin: 5px;
   margin-top: 15px;
 }
+
+.padding{
+  padding: 30px;
+}
+
+.centered{
+  text-align: center
+}
