@@ -91,3 +91,19 @@ input, textarea {
 .centered{
   text-align: center
 }
+
+
+.form-pricing input {
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  margin: 5px
+}
+
+
+.form-pricing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
