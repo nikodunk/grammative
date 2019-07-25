@@ -54,7 +54,9 @@ input, textarea {
 @media(min-width: 768px){
   .masthead-stuff{
     display: flex; 
-    flex-direction: row
+    flex-direction: row;
+    max-width: 1200px; 
+    margin: 0 auto
   }
 
   .title {
